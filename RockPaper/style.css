@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+.container {
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.header {
+    background: pink;
+    padding: 30px;
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+    letter-spacing: 2px;
+
+}
+
+.icon {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playerContainer {
+    display: flex;
+    margin-bottom: 70px;
+    justify-content: space-around;
+}
+
+#player i{
+    color: blue;
+}
+#computer i {
+    color: red;
+}
+.resetIcon{
+    font-size: 30px;
+    cursor: pointer;
+}
+.resultGame{
+    font-size: 30px;
+    margin: 20px;
+}
+.selected{
+    color: black !important;
+}

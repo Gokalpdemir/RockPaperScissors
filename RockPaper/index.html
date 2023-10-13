@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Taş Kağıt Makas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Taş Kağıt Makas Oyunu</h1>
+      </div>
+      <h2>
+        Gökalp Demir <span id="playerChoice" class="choice">Kağıt</span> - Skor:
+        <span class="playerScore" id="playerScore">0</span>
+      </h2>
+      <div class="playerContainer" id="player">
+        <i
+          onclick="select('rock')"
+          class="icon fa-regular fa-hand-back-fist"
+          title="Rock"
+          id="playerRock"
+        ></i>
+        <i
+          onclick="select('paper')"
+          class="icon fa-regular fa-hand"
+          title="Paper"
+          id="playerPaper"
+        ></i>
+        <i
+          onclick="select('scissors')"
+          class="icon fa-regular fa-hand-scissors"
+          title="Scissors"
+          id="playerScissors"
+        ></i>
+      </div>
+      <h2>
+        Computer <span id="computerChoice" class="choice">Kağıt</span> - Skor :
+        <span class="computerScore" id="computerScore">0</span>
+      </h2>
+      <div class="playerContainer" id="computer">
+        <i
+          class="icon fa-regular fa-hand-back-fist"
+          title="Rock"
+          id="computerRock"
+        ></i>
+        <i class="icon fa-regular fa-hand" title="Paper" id="computerPaper"></i>
+        <i
+          class="icon fa-regular fa-hand-scissors"
+          title="Scissors"
+          id="computerScissors"
+        ></i>
+      </div>
+      <div class="resetContainer">
+        <i
+          class="resetIcon fa-solid fa-rotate"
+          title="Sıfırla"
+          onclick="resetAll()"
+        ></i>
+      </div>
+      <div class="resultContainer">
+        <h3 class="resultGame" id="resultText"></h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="confetti.js"></script>
+  </body>
+</html>
